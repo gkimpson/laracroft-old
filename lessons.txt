@@ -32,5 +32,14 @@ git push origin --tags
     php artisan make:auth
     php artisan migrate
 
-05 - Migrations
+05 - Migrations/Tinker/Models
     php artisan make:migration create_teachers_table
+    php artisan make:model Student
+    within php artisan tinker
+
+    $student = new App\Student;
+    $student->firstname = 'Bob'; $student->surname = 'Geldoff'; $student->gender = 'male'; $student->age = 60; 
+    $student->save();
+
+    App\Student::all();
+    App\Student::find(1);

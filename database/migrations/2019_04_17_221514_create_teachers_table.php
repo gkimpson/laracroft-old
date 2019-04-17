@@ -15,7 +15,7 @@ class CreateTeachersTable extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->bigIncrements('teacher_id')->unsigned();
-            $table->bigInteger('college_id')->unsigned();
+            $table->bigInteger('class_id')->unsigned();
             $table->string('name');
             $table->timestamps();
         });

@@ -15,6 +15,7 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->bigIncrements('student_id')->unsigned();
+            $table->bigInteger('class_id')->unsigned();
             $table->string('firstname');
             $table->string('surname');
             $table->enum('gender', ['male', 'female']);

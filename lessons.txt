@@ -1,4 +1,9 @@
-use tags
+use tags     
+git tag -d 'tagname' [TAG DELETE]
+git tag -l [LIST ALL TAGS]
+git tag 'tagname' [CREATE NEW TAG]
+git checkout tags/v1.0 [tag name checkout]
+git push origin --tags
 
 01  -'start' - initial 'clean' Laravel 5.8.x installation (FRESH)
     Laravel Sell... 
@@ -22,6 +27,10 @@ use tags
     php artisan -h
     php artisan -list
 
-04 - Authentication
+04 - Authentication (illustrate Whoops by making an error)
     php artisan make -h 
     php artisan make:auth
+    php artisan migrate
+
+05 - Migrations
+    php artisan make:migration create_teachers_table

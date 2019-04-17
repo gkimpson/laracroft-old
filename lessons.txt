@@ -23,4 +23,5 @@ use tags
     php artisan -list
 
 04 - Authentication
+    php artisan make -h 
     php artisan make:auth
